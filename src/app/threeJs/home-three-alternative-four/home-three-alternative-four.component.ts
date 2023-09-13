@@ -149,7 +149,7 @@ export class HomeThreeAlternativeFourComponent implements OnInit, OnDestroy {
     // animations
     const gltfLoader = new GLTFLoader();
     gltfLoader
-      .load('../../../../../assets/models/XBot/XBot2.glb',
+      .load('assets/models/XBot/XBot2.glb',
         (gltf) => {
           this.playerVariables.animatedVariables.mesh.add(gltf.scene);
           this.playerVariables.animatedVariables.mesh.traverse(function (object: any) {
@@ -230,11 +230,11 @@ export class HomeThreeAlternativeFourComponent implements OnInit, OnDestroy {
 
   loadColliderEnvironment() {
     const dracroLoader = new DRACOLoader();
-    dracroLoader.setDecoderPath('../../../../../assets/draco/')
+    dracroLoader.setDecoderPath('assets/draco/')
     const gltfLoader = new GLTFLoader();
     gltfLoader.setDRACOLoader(dracroLoader);
 
-    gltfLoader.load('../../../../../assets/models/KingStTSP.glb', (gltf) => {
+    gltfLoader.load('assets/models/KingStTSP.glb', (gltf) => {
       // Scale and position
       const gltfScene = gltf.scene;
       gltfScene.scale.setScalar(1);
