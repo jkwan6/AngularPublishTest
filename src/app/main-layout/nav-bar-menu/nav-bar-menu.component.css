@@ -11,6 +11,10 @@
     padding-top:3px;
 }
 
+.button-configs{
+  justify-content: center;
+}
+
 .Flex-Content2{
     margin:auto;
 }

@@ -5,6 +5,7 @@
 
       <div class="Flex-Content1">
         <button (click)="vm.isPressed = !vm.isPressed; onToggle()"
+                class="button-configs"
                 [ngClass]="{'pressed':vm.isPressed}"
                 mat-button
                 [matTooltip]="!vm.isPressed ? 'Menu' : 'Close'"
