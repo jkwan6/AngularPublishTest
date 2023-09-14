@@ -12,7 +12,12 @@
 }
 
 .button-configs{
-  justify-content: center;
+  display:flex;justify-content:center;align-items:center;
+}
+
+.mat-icon {
+  margin-left: 0px;
+  margin-right: 0px !important;
 }
 
 .Flex-Content2{
@@ -34,7 +39,7 @@
 }
 
 .Pill-Button2:hover {
-  background: rgb(200, 200, 200, .8);
+  /* background: rgb(200, 200, 200, .8); */
 }
 
 .Pill-Button3 {
@@ -70,4 +75,3 @@ h1 {
   margin-bottom: 0px;
   text-decoration: underline;
 }
-

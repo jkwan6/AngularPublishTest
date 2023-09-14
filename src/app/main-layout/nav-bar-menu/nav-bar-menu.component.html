@@ -11,7 +11,7 @@
                 [matTooltip]="!vm.isPressed ? 'Menu' : 'Close'"
                 [matTooltipShowDelay]="showDelay.value"
                 [matTooltipHideDelay]="hideDelay.value">
-          <mat-icon>{{!vm.isPressed ? 'menu' : 'close'}}</mat-icon>
+          <mat-icon class="button-configs">{{!vm.isPressed ? 'menu' : 'close'}}</mat-icon>
         </button>
       </div>
 
@@ -25,7 +25,7 @@
           <a *ngIf="!this.isLoggedIn"
              mat-flat-button
              class="Pill-Button2"
-             color="secondary"
+             color="accent"
              [routerLink]="['/login']">
             Log In
           </a>

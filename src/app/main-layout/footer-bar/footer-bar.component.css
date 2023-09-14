@@ -31,3 +31,10 @@
 .theme-symbol{
     padding-right: 15px;
 }
+
+
+.toggle-button{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}

@@ -10,7 +10,14 @@ $light-theme: mat.define-light-theme((
    accent: $light-accent,
    warn: $light-warn
  ),
- typography: mat.define-typography-config(),
+ typography: mat.define-typography-config(
+  $headline-1: mat.define-typography-level(112px, 112px, 300, $letter-spacing: -0.05em),
+  $headline-2: mat.define-typography-level(56px, 56px, 400, $letter-spacing: -0.02em),
+  $headline-3: mat.define-typography-level(45px, 48px, 400, $letter-spacing: -0.005em),
+  $headline-4: mat.define-typography-level(34px, 40px, 400),
+  $headline-5: mat.define-typography-level(24px, 32px, 400),
+  // ...
+),
  density: 0,
 ));
 @include mat.all-component-themes($light-theme);
@@ -25,7 +32,14 @@ $light-theme: mat.define-light-theme((
     accent: $dark-accent,
     warn: $dark-warn
   ),
-  typography: mat.define-typography-config(),
+  typography: mat.define-typography-config(
+    $headline-1: mat.define-typography-level(112px, 112px, 300, $letter-spacing: -0.05em),
+    $headline-2: mat.define-typography-level(56px, 56px, 400, $letter-spacing: -0.02em),
+    $headline-3: mat.define-typography-level(45px, 48px, 400, $letter-spacing: -0.005em),
+    $headline-4: mat.define-typography-level(34px, 40px, 400),
+    $headline-5: mat.define-typography-level(24px, 32px, 400),
+    // ...
+  ),
   density: 0,
   ));
   @include mat.all-component-themes($dark-theme);
