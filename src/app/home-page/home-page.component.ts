@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
@@ -17,11 +17,16 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
   styleUrls: ['./home-page.component.css'],
   providers: [BaseRepository]
 })
-export class HomePageComponent implements OnInit {
+export class HomePageComponent implements AfterViewInit {
 
-  constructor(private sanitizer: DomSanitizer) { }
+  constructor(private el: ElementRef, private renderer: Renderer2) { }
 
-  ngOnInit(): void {
+  ngAfterViewInit() {
+    // Ensure that the Commento script is loaded and initialized
+    const commentoScript = this.renderer.createElement('script');
+    commentoScript.src = 'http://localhost:8080/js/commento.js';
+    this.renderer.setAttribute(commentoScript, 'defer', 'true');
+    this.renderer.appendChild(this.el.nativeElement, commentoScript);
   }
 
 

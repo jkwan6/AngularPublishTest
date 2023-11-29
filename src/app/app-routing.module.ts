@@ -2,11 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule, Router } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
-import { AcademicComponent } from './sub-pages/academic/academic.component';
 import { ContactInfoComponent } from './sub-pages/contact-info/contact-info.component';
-import { ExperienceComponent } from './sub-pages/experience/experience.component';
-import { SkillsComponent } from './sub-pages/skills/skills.component';
-import { TimelineComponent } from './sub-pages/timeline/timeline.component';
 import { ThreeJsPageFiveComponent } from './sub-pages/ThreeJs/three-js-page5/three-js-page-five.component';
 import { ThreeJsPageSevenComponent } from './sub-pages/ThreeJs/three-js-page7/three-js-page-seven.component';
 import { ThreeJsPageSixComponent } from './sub-pages/ThreeJs/three-js-page6/three-js-page-six.component';
@@ -30,10 +26,6 @@ const routes: Routes = [
   { path: 'login', component: AuthenticationComponent },
   { path: 'signup', component: AuthenticationComponent },
   { path: 'contact', component: ContactInfoComponent },
-  { path: 'academic', component: AcademicComponent },
-  { path: 'experience', component: ExperienceComponent },
-  { path: 'timeline', component: TimelineComponent },
-  { path: 'skills', component: SkillsComponent },
   { path: 'three', component: ThreeJsPageComponent },
   { path: 'three-2', component: ThreeJsPageTwoComponent },
   { path: 'three-3', component: ThreeJsPageThreeComponent },

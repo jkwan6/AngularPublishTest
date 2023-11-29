@@ -10,10 +10,6 @@ import { FooterBarComponent } from './main-layout/footer-bar/footer-bar.componen
 import { BodyContentComponent } from './main-layout/body-content/body-content.component';
 import { SideBarComponent } from './main-layout/body-content/side-bar/side-bar.component';
 import { ContactInfoComponent } from './sub-pages/contact-info/contact-info.component';
-import { AcademicComponent } from './sub-pages/academic/academic.component';
-import { ExperienceComponent } from './sub-pages/experience/experience.component';
-import { TimelineComponent } from './sub-pages/timeline/timeline.component';
-import { SkillsComponent } from './sub-pages/skills/skills.component';
 import { LifeInGeneralComponent } from './sub-pages/life-in-general/life-in-general.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { CommentModuleComponent } from './modules/comment-module/comment-module.component';
@@ -48,10 +44,6 @@ import { BlogModuleComponent } from './modules/blog-module/blog-module.component
     BodyContentComponent,
     SideBarComponent,
     ContactInfoComponent,
-    AcademicComponent,
-    ExperienceComponent,
-    TimelineComponent,
-    SkillsComponent,
     LifeInGeneralComponent,
     HomePageComponent,
     CommentModuleComponent,
