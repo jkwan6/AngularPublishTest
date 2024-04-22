@@ -181,7 +181,7 @@ export class HomeThreeAlternativeFourComponent implements OnInit, OnDestroy {
         }
     );
 
-    this.guiSetup();
+    //this.guiSetup();
     this.loadColliderEnvironment();
     this.defineEvents();
   }
