@@ -234,11 +234,11 @@ export class HomeThreeAlternativeFourComponent implements OnInit, OnDestroy {
     const gltfLoader = new GLTFLoader();
     gltfLoader.setDRACOLoader(dracroLoader);
 
-    gltfLoader.load('assets/models/KingStTSP.glb', (gltf) => {
+    gltfLoader.load('assets/models/AltTower.glb', (gltf) => {
       // Scale and position
       const gltfScene = gltf.scene;
-      gltfScene.scale.setScalar(1);
-      gltfScene.position.set(0, 10, 0)
+      gltfScene.scale.setScalar(80);
+      gltfScene.position.set(20, 0, 20)
 
       const box = new THREE.Box3();
       box.setFromObject(gltfScene);
